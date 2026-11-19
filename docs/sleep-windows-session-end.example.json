@@ -1,0 +1,20 @@
+{
+  "hooks": {
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "C:/PATH TO/Python313/python.exe",
+            "args": [
+              "-I", "-B", "-S", "-X", "utf8",
+              "C:/PATH TO/SkillOpt/scripts/sleep_windows_pilot.py", "mark",
+              "--marker-dir", "C:/PATH TO/LOCAL SESSION MARKERS"
+            ],
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
